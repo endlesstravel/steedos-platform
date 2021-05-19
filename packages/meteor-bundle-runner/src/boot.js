@@ -469,6 +469,8 @@ var runMain = Profile("Run main()", function () {
   }
   console.log('');
   console.log(`Project is running at ${process.env.ROOT_URL}`);
+	console.log("esp ", Date.now() - console.startTime);
+	console.aaa = true;
   console.log('');
   if (process.env.STEEDOS_AUTO_OPEN_BROWSER != 'false') { // 默认打开
     try {

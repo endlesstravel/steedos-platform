@@ -92,6 +92,9 @@ export class FormulaActionHandler{
                 }
             }
             else{
+				if (!tempObjectConfig.fields) {
+					console.log("ready to error", tempObjectConfig);
+				}
                 tempFieldConfig = tempObjectConfig.fields[varItem];
             }
             if (!tempFieldConfig) {
